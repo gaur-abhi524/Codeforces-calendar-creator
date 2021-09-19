@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+body{
+    font-family: "Ubuntu Mono", monospace;
+    text-align: center;
+}
+
+.code{
+    margin: auto;
+    margin-top: 40vh;
+}
+
+input{
+    width: 50vw;
+    text-align: center;
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    border-radius: 20px;
+    margin-top: 2rem;
+    background-color: #a8326d;
+    border:none;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }

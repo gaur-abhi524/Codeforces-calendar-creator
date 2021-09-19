@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeforces-calendar</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="toggle">
+        <label class="switch">
+          <input type="checkbox" name="environment" id="env" />
+          <span class="slider round"></span>
+        </label>
+        <h3>Development Mode</h3>
+      </div>
+      <div class="buttons">
+        <h1>Codeforces calendar creator</h1>
+        <a href="" target="_blank" id="signInAnchor">
+          <button id="signin">Click to retreive code</button></a
+        >
+        <h4>Enter code retrieved from above link here:</h4>
+        <input type="text" name="" id="tokencode" />
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="toggle">
+      <label class="switch">
+        <input type="checkbox" name="environment" id="env" />
+        <span class="slider round"></span>
+      </label>
+      <h3>Development Mode</h3>
+    </div>
+    <div class="buttonspg2">
+      <h1>Codeforces calendar creator</h1>
+      <button id="initiate">Initiate</button>
+      <button id="stop">Stop</button>
+      <button id="logout">logout</button>
+    </div>
+    <p class="description">
+        <h4>Initiate </h4><p>Initiates the process of automatically checking for new events and pushing them to your calendar.</p>
+        <h4>Stop </h4><p>Stop the execution of the process.</p>
+        <h4>Logout </h4><p>Logs you out of the extension</p>
+    </p>
+    <script src="./popup_signedIn.js"></script>
+  </body>
+</html>

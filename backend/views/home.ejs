@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="code">
+      <h2>
+        Copy this code below and paste it in input field of chrome extension.
+      </h2>
+      <input type="text" value="<%= code %>" disabled id="codetext"/>
+      <br />
+      <button id="copybtn" onclick="copy()">Copy to clipboard</button>
+    </div>
+    <script>
+      function copy() {
+        let copyText = document.getElementById("codetext");
+
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+
+        navigator.clipboard.writeText(copyText.value);
+        alert("Copied the code to clipboard! ");
+      }
+    </script>
+  </body>
+</html>
