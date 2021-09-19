@@ -150,6 +150,6 @@ app.post("/getToken",async(req,res) => {
 
 const PORT = 8080 || process.env.PORT;
 
-app.listen(PORT,(req,res)=>{
+app.listen(process.env.PORT || 8080,(req,res)=>{
     console.log("Server started at port:"+PORT);
 });
