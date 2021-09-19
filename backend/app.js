@@ -146,8 +146,10 @@ app.post("/getToken",async(req,res) => {
   if(token===undefined)
     res.status(400).send("Authorization not complete");
   res.status(200).json(token);
-})
+});
 
-app.listen("8080",(req,res)=>{
-    console.log("Server started");
+const PORT = 8080 || process.env.PORT;
+
+app.listen(PORT,(req,res)=>{
+    console.log("Server started at port:"+PORT);
 });
