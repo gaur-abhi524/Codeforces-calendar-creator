@@ -2,7 +2,13 @@
     "manifest_version":2,
     "name":"Codeforces-calendar",
     "description":"Creates events and reminders in your google calendar for upcoming codeforces contests.",
-    "version":"1.0",
+    "version":"1.01",
+    "icons": {
+        "16": "favicon-16x16.png",
+        "48": "favicon.ico",
+        "192": "android-chrome-192x192.png",
+        "512": "android-chrome-512x512.png"
+      },
     "browser_action":{
         "default_popup":"popup.html"
     },

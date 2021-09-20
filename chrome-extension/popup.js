@@ -32,8 +32,12 @@ submit.addEventListener("click",async(e)=>{
             if(response === "Success")
                 window.close();
         });
-        if(check)
-            window.close();
+        chrome.runtime.sendMessage({method: "isUserSignedIn"}, function(response) {
+            if(response === "loggedIn")
+                window.close();
+            // else
+            //     alert("Error Signing you in ☹!\nEither incorrect code entered or no access given by your google account.")
+        });
     }catch(err){
           console.log(err);
       }
